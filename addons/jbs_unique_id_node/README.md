@@ -31,8 +31,8 @@ After enabling this plugin, you can add the `UniqueId` node as a child of anothe
 1. Type "unique" on the Search textbox of the Create New Node form to filter the node list and easily find the `UniqueId` node.
 
 ![Add Node](https://github.com/JBSnippets/godot4-unique-id/blob/main/assets/add_node.png)
-1. Double-click the `UniqueId` node to add as a child of the node.
+1. Double-click the UniqueId node to add as a child of the node.
 
 ## 📝 Notes
-- Adding more than one `UniqueId` node will result in creating a sequence of Unique IDs. The IDs will either be concatenated or replace the parent name, which ever comes first.
-- Adding the `UniqueId` node as the only node, or a child of the root node, will result in changing the name of the root node.
+- Adding more than one UniqueId node will result in creating a sequence of Unique IDs. The IDs will either be concatenated or replace the parent name, which ever comes first.
+- Adding this as the only node, or a child of the root node, will result in changing the name of the root node.
