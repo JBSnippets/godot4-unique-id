@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd2y0c40tyt7m"]
+
+[ext_resource type="Script" path="res://addons/jbs_unique_id_node/jbs_unique_id.gd" id="1_ulwiu"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UniqueId" type="Node" parent="."]
+script = ExtResource("1_ulwiu")
