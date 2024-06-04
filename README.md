@@ -28,10 +28,10 @@ This node can be added as a child of an existing node. The parent node will then
 After enabling this plugin, you can add the `UniqueId` node as a child of another node and it will add or replace a Unique ID to the parent node.
 
 1. Right-click on a node or press Ctrl+A.
-1. Type "unique" on the Search textbox of the Create New Node form to filter the node list and easily find the `UniqueId` node.
+2. Type "unique" on the Search textbox of the Create New Node form to filter the node list and easily find the `UniqueId` node.
 
 ![Add Node](https://github.com/JBSnippets/godot4-unique-id/blob/main/assets/add_node.png)
-1. Double-click the `UniqueId` node to add as a child of the node.
+3. Double-click the `UniqueId` node to add as a child of the node.
 
 ## 📝 Notes
 - Adding more than one `UniqueId` node will result in creating a sequence of Unique IDs. The IDs will either be concatenated or replace the parent name, which ever comes first.
