@@ -1,4 +1,4 @@
-# Unique ID node ~ Godot 4+
+# <img src="https://raw.githubusercontent.com/JBSnippets/godot4-unique-id/main/jbs_unique_id_512.png" /> Unique ID node ~ Godot 4+
 A custom Godot 4+ node that generates a unique ID to be added to or replace the parent node's name.
 
 This node can be added as a child of an existing node. The parent node will then have its name either concatenated with the ID or replaced by the ID.
@@ -10,13 +10,7 @@ This node can be added as a child of an existing node. The parent node will then
 - Automatically free this custom node after generating the unique ID.
 
 ## 💽 Supported Versions
-<img src="https://img.shields.io/badge/Godot-v4.1.1-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue">
-<img src="https://img.shields.io/badge/Godot-v4.1.2-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue">
-<img src="https://img.shields.io/badge/Godot-v4.1.3-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue">
-<img src="https://img.shields.io/badge/Godot-v4.1.4-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue">
-<img src="https://img.shields.io/badge/Godot-v4.2.0-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue">
-<img src="https://img.shields.io/badge/Godot-v4.2.1-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue">
-<img src="https://img.shields.io/badge/Godot-v4.2.2-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue">
+<img src="https://img.shields.io/badge/Godot-v4.1.1-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"><img src="https://img.shields.io/badge/Godot-v4.1.2-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"><img src="https://img.shields.io/badge/Godot-v4.1.3-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"><img src="https://img.shields.io/badge/Godot-v4.1.4-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"><img src="https://img.shields.io/badge/Godot-v4.2.0-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"><img src="https://img.shields.io/badge/Godot-v4.2.1-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"><img src="https://img.shields.io/badge/Godot-v4.2.2-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue">
 
 ## 📥 Installing the Plugin
 ### Install using Godot's AssetLib
@@ -30,6 +24,7 @@ Add the `UniqueId` node as a child of another node and it will add or replace a 
 
 1. Right-click on a node or press Ctrl+A.
 1. Type "unique" on the Search textbox of the Create New Node form to filter the node list and easily find the `UniqueId` node.
+![Add Node]("https://raw.githubusercontent.com/JBSnippets/godot4-unique-id/main/assets/add_node.png")
 1. Double-click the UniqueId node to add as a child of the node.
 
 ## 📝 Notes
