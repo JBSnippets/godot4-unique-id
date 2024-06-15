@@ -33,9 +33,12 @@ After enabling this plugin, you can add the `UniqueId` node as a child of anothe
 ![Add Node](https://github.com/JBSnippets/godot4-unique-id/blob/main/assets/add_node.png)
 3. Double-click the `UniqueId` node to add as a child of the node.
 
-## Video on How I created and use the plugin.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Orj3tYSlQsc&t=22s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+## 📺 Video on How I created and use the plugin.
+[![Watch the video](https://github.com/JBSnippets/godot4-unique-id/blob/main/assets/JBSnippets_YT_Thumbnail_2.png)](https://www.youtube.com/watch?v=Orj3tYSlQsc&t=22s)
 
 ## 📝 Notes
 - Adding more than one `UniqueId` node will result in creating a sequence of Unique IDs. The IDs will either be concatenated or replace the parent name, which ever comes first.
 - Adding the `UniqueId` node as the only node, or a child of the root node, will result in changing the name of the root node.
+
+## 📡 More Plugins!
+Head on over to my website at [https://plugins.jbsnippets.com](https://plugins.jbsnippets.com) to read more about this plugin and other plugins that I've been creating during my game development journey.
