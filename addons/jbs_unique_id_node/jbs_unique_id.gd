@@ -1,9 +1,9 @@
 @tool
 @icon("jbs_unique_id.png")
 
-## A custom node that generates a unique ID to be added to or replace the node's name.
+## A custom node that generates a unique ID to be concatenated to, or replace the parent node's name.
 ##
-## This custom node will be added as a child of an existing node. The parent node will then have its name either concatenated with the ID or replaced by the ID.
+## This custom node can be added as a child of an existing node. The parent node will then have its name either concatenated with the ID or replaced by the ID.
 class_name UniqueId
 extends Node
 

@@ -1,11 +1,11 @@
 # <img src="https://raw.githubusercontent.com/JBSnippets/godot4-unique-id/main/jbs_unique_id_512.png" width="32" height="32" /> Unique ID node ~ Godot 4+
-A custom Godot 4+ node that generates a unique ID to be added to or replace the parent node's name.
+A custom Godot 4+ node that generates a unique ID to be concatenated to, or replace the parent node's name.
 
 This node can be added as a child of an existing node. The parent node will then have its name either concatenated with the ID or replaced by the ID.
 
 ## 🧬 Features
 - Can generate 3 different length of unique ID: Short, Medium, Long.
-- Ability concatenate the ID to parent name or replace the parent name.
+- Ability to concatenate the ID to parent name or replace the parent name.
 - Option to add a string separator when concatenating the ID.
 - Automatically free this custom node after generating the unique ID.
 
@@ -32,6 +32,9 @@ After enabling this plugin, you can add the `UniqueId` node as a child of anothe
 
 ![Add Node](https://github.com/JBSnippets/godot4-unique-id/blob/main/assets/add_node.png)
 3. Double-click the `UniqueId` node to add as a child of the node.
+
+## Video on How I created and use the plugin.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Orj3tYSlQsc&t=22s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## 📝 Notes
 - Adding more than one `UniqueId` node will result in creating a sequence of Unique IDs. The IDs will either be concatenated or replace the parent name, which ever comes first.
