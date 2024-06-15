@@ -1,11 +1,11 @@
 # <img src="https://raw.githubusercontent.com/JBSnippets/godot4-unique-id/main/jbs_unique_id_512.png" width="32" height="32" /> Unique ID node ~ Godot 4+
-A custom Godot 4+ node that generates a unique ID to be added to or replace the parent node's name.
+A custom Godot 4+ node that generates a unique ID to be concatenated to, or replace the parent node's name.
 
 This node can be added as a child of an existing node. The parent node will then have its name either concatenated with the ID or replaced by the ID.
 
 ## 🧬 Features
 - Can generate 3 different length of unique ID: Short, Medium, Long.
-- Ability concatenate the ID to parent name or replace the parent name.
+- Ability to concatenate the ID to parent name or replace the parent name.
 - Option to add a string separator when concatenating the ID.
 - Automatically free this custom node after generating the unique ID.
 
@@ -28,11 +28,17 @@ This node can be added as a child of an existing node. The parent node will then
 After enabling this plugin, you can add the `UniqueId` node as a child of another node and it will add or replace a Unique ID to the parent node.
 
 1. Right-click on a node or press Ctrl+A.
-1. Type "unique" on the Search textbox of the Create New Node form to filter the node list and easily find the `UniqueId` node.
+2. Type "unique" on the Search textbox of the Create New Node form to filter the node list and easily find the `UniqueId` node.
 
 ![Add Node](https://github.com/JBSnippets/godot4-unique-id/blob/main/assets/add_node.png)
-1. Double-click the UniqueId node to add as a child of the node.
+3. Double-click the `UniqueId` node to add as a child of the node.
+
+## 📺 Video on How I created and use the plugin.
+[![Watch the video](https://github.com/JBSnippets/godot4-unique-id/blob/main/assets/JBSnippets_YT_Thumbnail_2.png)](https://www.youtube.com/watch?v=Orj3tYSlQsc&t=22s)
 
 ## 📝 Notes
-- Adding more than one UniqueId node will result in creating a sequence of Unique IDs. The IDs will either be concatenated or replace the parent name, which ever comes first.
-- Adding this as the only node, or a child of the root node, will result in changing the name of the root node.
+- Adding more than one `UniqueId` node will result in creating a sequence of Unique IDs. The IDs will either be concatenated or replace the parent name, which ever comes first.
+- Adding the `UniqueId` node as the only node, or a child of the root node, will result in changing the name of the root node.
+
+## 📡 More Plugins!
+Head on over to my website at [https://plugins.jbsnippets.com](https://plugins.jbsnippets.com) to read more about this plugin and other plugins that I've been creating during my game development journey.
