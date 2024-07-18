@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dd2y0c40tyt7m"]
+[gd_scene load_steps=3 format=3 uid="uid://dd2y0c40tyt7m"]
 
 [ext_resource type="Script" path="res://addons/jbs_unique_id_node/jbs_unique_id.gd" id="1_ulwiu"]
+[ext_resource type="Script" path="res://node_2d.gd" id="1_yu767"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_yu767")
 
 [node name="UniqueId" type="Node" parent="."]
 script = ExtResource("1_ulwiu")

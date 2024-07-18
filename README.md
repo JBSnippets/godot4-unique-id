@@ -7,10 +7,11 @@ This node can be added as a child of an existing node. The parent node will then
 - Can generate 3 different length of unique ID: Short, Medium, Long.
 - Ability to concatenate the ID to parent name or replace the parent name.
 - Option to add a string separator when concatenating the ID.
-- Automatically free this custom node after generating the unique ID.
+- Option to set the unique ID as persistent (saved to disk).
+- Automatically free this custom node after use.
 
 ## 💽 Supported Versions
-<img src="https://img.shields.io/badge/Godot-v4.1.1-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.1.2-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.1.3-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.1.4-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.2.0-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.2.1-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.2.2-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue">
+<img src="https://img.shields.io/badge/Godot-v4.1.1-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.1.2-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.1.3-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.1.4-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.2.0-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.2.1-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.2.2-%23478cbf?logo=godot-engine&logoColor=cyian&color=blue"> <img src="https://img.shields.io/badge/Godot-v4.3-%23478cbf?logo=godot-engine&logoColor=cyian&color=orange">
 
 ## 📥 Installing the Plugin
 ### Install using Godot's AssetLib
@@ -30,9 +31,11 @@ After enabling this plugin, you can add the `UniqueId` node as a child of anothe
 1. Right-click on a node or press Ctrl+A.
 
 ![Add Node](https://github.com/JBSnippets/godot4-unique-id/blob/main/assets/add_node0.png)
+
 2. Type "unique" on the Search textbox of the Create New Node form to filter the node list and easily find the `UniqueId` node.
 
 ![Add Node](https://github.com/JBSnippets/godot4-unique-id/blob/main/assets/add_node.png)
+
 3. Double-click the `UniqueId` node to add as a child of the node.
 
 ![Add Node](https://github.com/JBSnippets/godot4-unique-id/blob/main/assets/add_node2.png)
