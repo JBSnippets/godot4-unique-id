@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="Unique Id"
-config/features=PackedStringArray("4.2", "GL Compatibility")
+config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://jbs_unique_id_128.png"
+
+[autoload]
+
+PersistentId="*res://addons/jbs_unique_id_node/jbs_persistent_id.gd"
 
 [editor_plugins]
 

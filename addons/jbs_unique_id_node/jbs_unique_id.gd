@@ -8,8 +8,11 @@ class_name UniqueId
 extends Node
 
 enum _length_type {
+	## Short Unique ID
 	Short = 0,
+	## Medium Unique ID
 	Medium = 1,
+	## Long Unique ID
 	Long = 2
 }
 
@@ -26,34 +29,57 @@ enum _length_type {
 ## Select to replace the original name
 @export var replace_original: bool = false
 
-## Select to free this node after use
-@export var free_after_use: bool = true
+## Select to enable persistent ID[br][br]
+##
+## [color=orange]NOTE[/color]: ID is saved in disk (persistent).
+@export var persistent_id: bool = false
 
 func _ready():
 	if Engine.is_editor_hint(): return
+	var persistent_ids = get_tree().root.get_node("/root/PersistentId")
 	
 	if not enabled:
-		if free_after_use:
-			queue_free()
+		queue_free()
 		return
-		
-	var uid: String = ""
-	match length:
-		_length_type.Short:
-			uid = _generate_short_uid()
-		_length_type.Medium:
-			uid = _generate_medium_uid()
-		_length_type.Long:
-			uid = _generate_long_uid()
 	
 	var parent = get_parent()
+	var uid: String = ""
+	
+	# check first if we have a meta_data already saved
+	if parent.has_meta("unique_id"):
+		uid = parent.get_meta("unique_id")
+	
+	# if no meta_data value, check if persitent and load from file
+	if uid.is_empty() and persistent_id and persistent_ids:
+		uid = persistent_ids.load_id(parent.get_instance_id())
+			
+	# if still no unique id, generate one!
+	if uid.is_empty():
+		match length:
+			_length_type.Short:
+				uid = _generate_short_uid()
+			_length_type.Medium:
+				uid = _generate_medium_uid()
+			_length_type.Long:
+				uid = _generate_long_uid()
+		
+		# save to parent meta_data
+		parent.set_meta("unique_id", uid)
+		
+		# save to file if persistent
+		if persistent_id and persistent_ids:
+			persistent_ids.add_id(parent.get_instance_id(), uid)
+		elif persistent_ids:
+			# erase any persitent id associated to the parent
+			persistent_ids.remove_id(parent.get_instance_id())
+		
 	if replace_original:
 		parent.name = uid
 	else:
 		parent.name = "%s%s%s" % [parent.name, separator, uid]
 	
-	if free_after_use: queue_free()
-	
+	queue_free()
+
 func _generate_short_uid() -> String:
 	var uuid = ""
 	for i in range(4):
